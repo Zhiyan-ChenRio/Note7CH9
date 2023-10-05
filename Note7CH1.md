@@ -9,13 +9,23 @@
   What is NoSQL: NoSQL is a database approach that diverges from traditional relational databases, offering more flexible data models to handle the performance, scalability, and storage needs of modern, data-intensive applications, particularly for unstructured data types like user data, chat logs, time series data, and multimedia content.
   TYPES OF NOSQL DATABASES: NoSQL databases encompass four main categories: key-value stores for flexible non-transactional data, document stores for storing self-describing documents, wide-column stores for efficient retrieval of related data, and graph stores for relationship-centric data, with multi-modal databases combining these categories for broader application support.
   Query for Data: Data retrieval from a database, known as a query, varies depending on the database type, with SQL being the predominant language for performing actions like selecting, inserting, updating, and deleting data in relational databases.
-## 10.6, 10.7,10.8
+## 10.6, 10.7,10.8, 10.9
   Choosing the Right Database Solution:The concept emphasizes the importance of selecting the right type of database (Relational or NoSQL) for a software project, highlighting that the choice can significantly impact performance and scalability, and it's crucial for both beginners and experienced developers to make informed decisions.
   Relational DBs (SQL based): A relational database is a structured collection of interconnected tables that store data in a way that allows for efficient querying using SQL-like languages, with predefined schemas, and common examples include MySQL, PostgreSQL, Oracle, and MS SQL Server.
   Columnar DBs: Columnar databases, like Cassandra, excel in efficiently handling queries on specific subsets of columns, making them ideal for data science and log storage applications.
   Key-value DBs: Key-value databases are fast and efficient for data retrieval using unique keys, making them ideal for caching and other applications that require quick querying, but they lack support for complex queries across records.
   Amazon Relational Database Service (RDS): Amazon RDS is a managed relational database service offering various database engines, streamlining routine tasks, enabling replication for improved reliability, and adopting a pay-as-you-go pricing model.
   What is an Amazon RDS DB Instance: Amazon RDS is a cloud-based database service where DB instances serve as isolated environments for multiple databases, each running a specific DB engine, customizable in terms of CPU, memory, storage, and VPC usage, all managed by Amazon RDS.
-  Integration with other Amazon Services: 
+  Integration with other Amazon Services: Amazon VPC enables control over the networking environment for services like EC2 and Route 53 to seamlessly integrate with RDS databases.
+  High Availability: In a Multi-AZ deployment on Amazon RDS, a standby database replica is automatically maintained in a different Availability Zone, ensuring synchronous replication of updates and enabling automatic failover in case of database or Availability Zone failure without requiring application code changes.
+  Amazon RDS Pricing: To estimate Amazon RDS costs, consider factors like service time, database characteristics, and billing components, and choose between On-Demand or Reserved Instances for pricing flexibility.
+  Amazon RDS as a Managed Service: Amazon RDS is an AWS-managed service that simplifies relational database management in the cloud, offering scalability, automation of administrative tasks, and allowing users to concentrate on optimizing their applications.
+  What is Amazon DynamoDB: Amazon DynamoDB is a fully managed NoSQL database service that offers fast, predictable performance, seamless scalability, and various features like automatic scaling, global replication, and encryption, allowing you to focus on application development without worrying about database administration.
+## 10.11, 10.12
+  Amazon Redshift: Amazon Redshift is a cloud-based data warehousing service that allows scalable storage and fast analysis of large datasets, integrated with data lakes, offering high performance and cost efficiency for businesses using SQL and BI tools.
+  How Does Redshift Work: An Amazon Redshift cluster is composed of leader and compute nodes, with the leader node managing query processing by parsing, coordinating, and aggregating results from the compute nodes before returning them to client applications.
+  Amazon Aurora:Amazon Aurora is a cloud database that combines the benefits of enterprise databases with the cost-effectiveness and automation of open source databases like MySQL and PostgreSQL.
+  
+  
   
     
